@@ -26,11 +26,11 @@ Use predict-used.py for it. And the default parameter settings are given. Choose
 
 ## Re-ranking
 
-After getting the file, you can use Classfication\score.py to score the candidate sentence.
+After getting the file, you can use Classfication\score.py to score the candidate sentence, but change the "file_path".
 
 ## Evaluate files
 
-Just use evaluate.py for it. Change parameters as required. Remember change "--manyflag" to True and "--numbercount" to number of candidate sentences you returned for each original sentence, if you want to re-rank.
+Before the evaluation, for the sampling strategy (Top-k, Top-p and Typical-p), it is necessary to combine the files first. You can refer to combinefile.py. Then you can use evaluate.py for it. Change parameters as required. Remember change "--manyflag" to True and "--numbercount" to number of candidate sentences you returned for each original sentence, if you want to re-rank.
 
 # Positive Reframing Score
 
