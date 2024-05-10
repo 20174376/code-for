@@ -32,7 +32,7 @@ After getting the file, you can use Classfication\score.py to score the candidat
 
 Before the evaluation, for the sampling strategy (Top-k, Top-p and Typical-p), it is necessary to combine the files first. You can refer to combinefile.py. Then you can use evaluate.py for it. Change parameters as required. Remember change "--manyflag" to True and "--numbercount" to number of candidate sentences you returned for each original sentence, if you want to re-rank.
 
-# Positive Reframing Score
+# RTQE
 
 Enter the JudgeReframe folder, then you can train the model through main.py, but change the "model_path" and "save_path".
 
